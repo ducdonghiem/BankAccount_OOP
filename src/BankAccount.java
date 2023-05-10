@@ -3,16 +3,16 @@ public class BankAccount {
     private String accountNumber;
     private double balance;
 
-    public BankAccount(String ownerName, String accountNumber, double balance) {
+    public BankAccount(String ownerName, String accountNumber, double initBalance) {
         this.ownerName = ownerName;
         this.accountNumber = accountNumber;
         
-        if (balance < 50000) {
+        if (initBalance < 50000) {
             System.out.println("Initial balance is less than VND 50.000");
             this.balance = 50000;
         }
         else {
-        	this.balance = balance;
+        	this.balance = initBalance;
     }
     }
 
