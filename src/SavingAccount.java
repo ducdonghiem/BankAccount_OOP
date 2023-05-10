@@ -1,4 +1,3 @@
-
 public class SavingAccount extends BankAccount {
     private double interestRate;
 
@@ -15,6 +14,7 @@ public class SavingAccount extends BankAccount {
         return getBalance() * interestRate / 12;
     }
     
+    @Override
     public void withdraw(double amount) {
     	System.out.println("Cannot withdraw from a saving account");
     }
